@@ -1,0 +1,7779 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6235731821094683662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6235731821094683660}
+  - component: {fileID: 6235731821094683663}
+  m_Layer: 0
+  m_Name: MarchingCubesTable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6235731821094683660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235731821094683662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.0486803, y: -7.44892, z: -12.403202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6235731821094683663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235731821094683662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0480508092139f34f9a2addd3cf0cc40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+  - id: 0
+    vertices: []
+    triangles: []
+  - id: 1
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 2, z: 1}
+  - id: 2
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 2, z: 1}
+  - id: 3
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 4
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 2, z: 1}
+  - id: 5
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 6
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 7
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 8
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 2, z: 1}
+  - id: 9
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 10
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 11
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 12
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 13
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 14
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 15
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 16
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 2, z: 1}
+  - id: 17
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 18
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 19
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 20
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 21
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 22
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+    - {x: 8, y: 6, z: 7}
+  - id: 23
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 5, y: 3, z: 4}
+    - {x: 4, y: 0, z: 1}
+  - id: 24
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 25
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 26
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 27
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 28
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 29
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 30
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 31
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 32
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 2, z: 1}
+  - id: 33
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 34
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 35
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 36
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 37
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 38
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 39
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 40
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 41
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+    - {x: 8, y: 6, z: 7}
+  - id: 42
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 43
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 5, y: 3, z: 4}
+    - {x: 4, y: 0, z: 1}
+  - id: 44
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 45
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 46
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 47
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 48
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 49
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 50
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 51
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 52
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 53
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 54
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 55
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 56
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 57
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 58
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 59
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 60
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 6, y: 4, z: 5}
+    - {x: 5, y: 7, z: 6}
+  - id: 61
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 62
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 63
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 64
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 2, z: 1}
+  - id: 65
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 66
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 67
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 68
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 69
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 70
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 71
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 72
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 73
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+    - {x: 8, y: 6, z: 7}
+  - id: 74
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 75
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 76
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 77
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 5, y: 3, z: 4}
+    - {x: 4, y: 0, z: 1}
+  - id: 78
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 79
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 80
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 81
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 82
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 83
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 84
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 85
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 86
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 87
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 88
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 89
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 90
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 6, y: 4, z: 5}
+    - {x: 5, y: 7, z: 6}
+  - id: 91
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 92
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 93
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 94
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 95
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 96
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 97
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+    - {x: 8, y: 6, z: 7}
+  - id: 98
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 99
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 100
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 101
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 102
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 6, y: 4, z: 5}
+    - {x: 5, y: 7, z: 6}
+  - id: 103
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 104
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+    - {x: 8, y: 6, z: 7}
+  - id: 105
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+    - {x: 9, y: 11, z: 10}
+  - id: 106
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 107
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 4, y: 0, z: 3}
+    - {x: 3, y: 0, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+  - id: 108
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 109
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 4, y: 0, z: 3}
+    - {x: 3, y: 0, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+  - id: 110
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 111
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 112
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 113
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 5, y: 3, z: 4}
+    - {x: 4, y: 0, z: 1}
+  - id: 114
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 115
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 116
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 117
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 118
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 119
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 120
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 121
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 4, y: 0, z: 3}
+    - {x: 3, y: 0, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+  - id: 122
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 123
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 124
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 7
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 125
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 126
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 3, y: 0, z: 1}
+    - {x: 5, y: 2, z: 4}
+  - id: 127
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 7
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 7
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 7
+    triangles:
+    - {x: 2, y: 0, z: 1}
+  - id: 128
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 2, z: 1}
+  - id: 129
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 130
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 131
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 132
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 133
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 134
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+    - {x: 8, y: 6, z: 7}
+  - id: 135
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 136
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 137
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 138
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 139
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 140
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 141
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 142
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 5, y: 3, z: 4}
+    - {x: 4, y: 0, z: 1}
+  - id: 143
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 144
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+  - id: 145
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 146
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+    - {x: 8, y: 6, z: 7}
+  - id: 147
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 148
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 5, y: 3, z: 4}
+    - {x: 8, y: 6, z: 7}
+  - id: 149
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 150
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+    - {x: 9, y: 11, z: 10}
+  - id: 151
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 4, y: 0, z: 3}
+    - {x: 3, y: 0, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+  - id: 152
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 153
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 6, y: 4, z: 5}
+    - {x: 5, y: 7, z: 6}
+  - id: 154
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 155
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 156
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 157
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 158
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 4, y: 0, z: 3}
+    - {x: 3, y: 0, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+  - id: 159
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 160
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 161
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 162
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 163
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 164
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 165
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 6, y: 4, z: 5}
+    - {x: 5, y: 7, z: 6}
+  - id: 166
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 167
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 168
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 169
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 170
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 171
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 4
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 172
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 173
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 174
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 175
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 176
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 177
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 178
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 5, y: 3, z: 4}
+    - {x: 4, y: 0, z: 1}
+  - id: 179
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 180
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 181
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 182
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 4, y: 0, z: 3}
+    - {x: 3, y: 0, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+  - id: 183
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 184
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 185
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 186
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 187
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 188
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 189
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 3, y: 0, z: 1}
+    - {x: 5, y: 2, z: 4}
+  - id: 190
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 191
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 6
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 6
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 6
+    triangles:
+    - {x: 2, y: 0, z: 1}
+  - id: 192
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 193
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 194
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 5, z: 1}
+    - {x: 5, y: 6, z: 1}
+    - {x: 2, y: 4, z: 3}
+  - id: 195
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 6, y: 4, z: 5}
+    - {x: 5, y: 7, z: 6}
+  - id: 196
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 197
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 198
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 199
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 200
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 201
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 202
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 203
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 204
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 205
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 206
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 207
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 208
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 209
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 210
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 211
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 212
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 5, y: 3, z: 4}
+    - {x: 4, y: 0, z: 1}
+  - id: 213
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 214
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 4, y: 0, z: 3}
+    - {x: 3, y: 0, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+  - id: 215
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 216
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 217
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 218
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 219
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 3, y: 0, z: 1}
+    - {x: 5, y: 2, z: 4}
+  - id: 220
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 221
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 222
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 5
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 223
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 1, y: -0, z: 0}
+      id_to: 5
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: -0, z: 1}
+      id_to: 5
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 5
+    triangles:
+    - {x: 2, y: 0, z: 1}
+  - id: 224
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 0, y: 3, z: 1}
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 1, z: 2}
+  - id: 225
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    triangles:
+    - {x: 4, y: 0, z: 2}
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 4, z: 1}
+    - {x: 7, y: 5, z: 6}
+  - id: 226
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 3, y: 1, z: 2}
+    - {x: 0, y: 2, z: 1}
+    - {x: 4, y: 0, z: 1}
+    - {x: 5, y: 0, z: 4}
+  - id: 227
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 228
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 3, y: 2, z: 1}
+    - {x: 0, y: 1, z: 2}
+    - {x: 4, y: 1, z: 0}
+    - {x: 5, y: 4, z: 0}
+  - id: 229
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 230
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 4, z: 1}
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 6, z: 4}
+    - {x: 4, y: 6, z: 5}
+  - id: 231
+    vertices:
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 3, y: 0, z: 1}
+    - {x: 5, y: 2, z: 4}
+  - id: 232
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 0, y: 4, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 5, y: 3, z: 4}
+    - {x: 4, y: 0, z: 1}
+  - id: 233
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: 0}
+      id_to: 2
+    triangles:
+    - {x: 4, y: 0, z: 3}
+    - {x: 3, y: 0, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 3, y: 5, z: 4}
+    - {x: 6, y: 8, z: 7}
+  - id: 234
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 235
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 236
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 237
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 0, z: 1}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 238
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 239
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: -0, z: 1}
+      id_to: 4
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 4
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -1, z: 0}
+      id_to: 4
+    triangles:
+    - {x: 2, y: 0, z: 1}
+  - id: 240
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 0, y: 2, z: 1}
+    - {x: 3, y: 1, z: 2}
+  - id: 241
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 242
+    vertices:
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 243
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 244
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 3
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 245
+    vertices:
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 246
+    vertices:
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: 0, z: 0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: 0}
+      id_to: 0
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 247
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 1, y: 0, z: -0}
+      id_to: 3
+    - from: {x: 1, y: 1, z: 1}
+      id_from: 7
+      shift: {x: 0, y: 0, z: -1}
+      id_to: 3
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: 0, y: 1, z: -0}
+      id_to: 3
+    triangles:
+    - {x: 2, y: 0, z: 1}
+  - id: 248
+    vertices:
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 4, y: 2, z: 3}
+    - {x: 0, y: 3, z: 2}
+    - {x: 4, y: 1, z: 2}
+  - id: 249
+    vertices:
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: 0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: 0, z: 0}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+    - {x: 0, y: 4, z: 1}
+    - {x: 0, y: 5, z: 4}
+  - id: 250
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 2
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 251
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: -1, y: 0, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: -0, y: 1, z: -0}
+      id_to: 2
+    - from: {x: 0, y: 1, z: 1}
+      id_from: 6
+      shift: {x: -0, y: 0, z: -1}
+      id_to: 2
+    triangles:
+    - {x: 2, y: 0, z: 1}
+  - id: 252
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+    - {x: 1, y: 3, z: 2}
+  - id: 253
+    vertices:
+    - from: {x: 1, y: 1, z: 0}
+      id_from: 3
+      shift: {x: 0, y: -1, z: -0}
+      id_to: 1
+    - from: {x: 1, y: 0, z: 1}
+      id_from: 5
+      shift: {x: 0, y: -0, z: -1}
+      id_to: 1
+    - from: {x: 0, y: 0, z: 0}
+      id_from: 0
+      shift: {x: 1, y: -0, z: -0}
+      id_to: 1
+    triangles:
+    - {x: 2, y: 0, z: 1}
+  - id: 254
+    vertices:
+    - from: {x: 0, y: 1, z: 0}
+      id_from: 2
+      shift: {x: -0, y: -1, z: -0}
+      id_to: 0
+    - from: {x: 1, y: 0, z: 0}
+      id_from: 1
+      shift: {x: -1, y: -0, z: -0}
+      id_to: 0
+    - from: {x: 0, y: 0, z: 1}
+      id_from: 4
+      shift: {x: -0, y: -0, z: -1}
+      id_to: 0
+    triangles:
+    - {x: 2, y: 0, z: 1}
+  - id: 255
+    vertices: []
+    triangles: []
+  complete_count: 256
